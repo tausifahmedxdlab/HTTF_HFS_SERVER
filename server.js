@@ -31,7 +31,7 @@ const upload = multer({
   },
 });
 
-// Generate MD5 checksum
+// Generate MD5 checksum for protect file
 const generateMD5 = (filePath) => {
   return new Promise((resolve, reject) => {
     const hash = crypto.createHash("md5");
